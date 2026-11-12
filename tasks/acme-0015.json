@@ -13,7 +13,7 @@
     "The generated handler tests for confirm_booking pass",
     "The mutation check catches every mutant of confirm"
   ],
-  "verification_commands": [["go", "test", "./domain/acme/..."], ["go", "test", "./gen/..."], ["mutate", "./domain/acme", "-func", "confirm"]],
+  "verification_commands": [["go", "test", "./domain/acme/..."], ["go", "test", "./gen/..."], ["mutate", "./domain/acme", "-func", "Confirm"]],
   "risk_level": "low",
   "required_approvals": [],
   "budget": {"coder_retries": 3, "minutes": 15, "reasoner_usd": 1},

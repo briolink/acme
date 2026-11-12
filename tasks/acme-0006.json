@@ -12,7 +12,7 @@
     "The generated transition tests for (confirmed, cancel) pass",
     "The mutation check catches every mutant of before_start"
   ],
-  "verification_commands": [["go", "test", "./domain/acme/..."], ["mutate", "./domain/acme", "-func", "before_start"]],
+  "verification_commands": [["go", "test", "./domain/acme/..."], ["mutate", "./domain/acme", "-func", "BeforeStart"]],
   "risk_level": "low",
   "required_approvals": [],
   "budget": {"coder_retries": 3, "minutes": 15, "reasoner_usd": 1},

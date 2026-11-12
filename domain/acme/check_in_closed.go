@@ -1,0 +1,15 @@
+package acme
+
+import (
+	"time"
+
+	"github.com/briolink/acme/gen/domain/acme"
+)
+
+// CheckInClosed is a guard.
+//
+// Rules:
+//   - True when now is more than 15 minutes after starts_at
+func (Impl) CheckInClosed(booking acme.Booking, now time.Time) bool {
+	return now.After(booking.StartsAt.Add(15 * time.Minute))
+}

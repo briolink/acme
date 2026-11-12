@@ -11,7 +11,7 @@
     "The tests for overstay_charge pass",
     "The mutation check catches every mutant of overstay_charge"
   ],
-  "verification_commands": [["go", "test", "./domain/acme/..."], ["mutate", "./domain/acme", "-func", "overstay_charge"]],
+  "verification_commands": [["go", "test", "./domain/acme/..."], ["mutate", "./domain/acme", "-func", "OverstayCharge"]],
   "risk_level": "medium",
   "required_approvals": ["founder"],
   "budget": {"coder_retries": 3, "minutes": 30, "reasoner_usd": 2},

@@ -11,7 +11,7 @@
     "The tests for money_within_bounds pass",
     "The mutation check catches every mutant of money_within_bounds"
   ],
-  "verification_commands": [["go", "test", "./domain/acme/..."], ["mutate", "./domain/acme", "-func", "money_within_bounds"]],
+  "verification_commands": [["go", "test", "./domain/acme/..."], ["mutate", "./domain/acme", "-func", "MoneyWithinBounds"]],
   "risk_level": "low",
   "required_approvals": [],
   "budget": {"coder_retries": 3, "minutes": 15, "reasoner_usd": 1},

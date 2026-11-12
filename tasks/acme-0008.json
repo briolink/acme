@@ -12,7 +12,7 @@
     "The generated transition tests for (confirmed, mark_no_show) pass",
     "The mutation check catches every mutant of check_in_closed"
   ],
-  "verification_commands": [["go", "test", "./domain/acme/..."], ["mutate", "./domain/acme", "-func", "check_in_closed"]],
+  "verification_commands": [["go", "test", "./domain/acme/..."], ["mutate", "./domain/acme", "-func", "CheckInClosed"]],
   "risk_level": "low",
   "required_approvals": [],
   "budget": {"coder_retries": 3, "minutes": 15, "reasoner_usd": 1},

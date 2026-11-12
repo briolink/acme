@@ -11,7 +11,7 @@
     "The tests for refund_due pass",
     "The mutation check catches every mutant of refund_due"
   ],
-  "verification_commands": [["go", "test", "./domain/acme/..."], ["mutate", "./domain/acme", "-func", "refund_due"]],
+  "verification_commands": [["go", "test", "./domain/acme/..."], ["mutate", "./domain/acme", "-func", "RefundDue"]],
   "risk_level": "medium",
   "required_approvals": ["founder"],
   "budget": {"coder_retries": 3, "minutes": 30, "reasoner_usd": 2},

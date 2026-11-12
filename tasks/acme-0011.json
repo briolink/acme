@@ -12,7 +12,7 @@
     "The generated handler tests for quote_booking pass",
     "The mutation check catches every mutant of quote"
   ],
-  "verification_commands": [["go", "test", "./domain/acme/..."], ["go", "test", "./gen/..."], ["mutate", "./domain/acme", "-func", "quote"]],
+  "verification_commands": [["go", "test", "./domain/acme/..."], ["go", "test", "./gen/..."], ["mutate", "./domain/acme", "-func", "Quote"]],
   "risk_level": "low",
   "required_approvals": [],
   "budget": {"coder_retries": 3, "minutes": 30, "reasoner_usd": 2},
